@@ -1,0 +1,33 @@
+How to create a react-project:
+------------------------------
+1: using create-react-app tool (deprecated)
+2: using vite-tool
+
+1: using create-react-app tool:
+-------------------------------
+syntax:
+-------
+create-react-app  name-of-project
+
+exmaple:
+--------
+create-react-app myapp
+
+cd myapp
+
+npm start
+
+
+2: using vite-tool:
+-------------------
+npm create vite@latest 
+
+project: give the project name
+
+language: choose the language
+
+cd project-name
+
+npm install 
+
+npm run dev
