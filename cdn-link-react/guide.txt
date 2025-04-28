@@ -1,0 +1,45 @@
+Starter Project with React-CDN :
+--------------------------------
+1: copy the cdn-link of react from 
+    https://legacy.reactjs.org/docs/cdn-links.html
+
+2: check for "React" in console (inspect)
+3: creating the "root" element in <div> for using as root.
+4: in javascript you can create a react-elements as shown as:
+syntax:
+-------
+    React.createElement(type,props,childrens)
+
+exmaple: (in React/Javascript)
+--------
+    const Btn = () => 
+    React.createElement("button",{ id: 'btn'}, React.
+    createElement('span',{},"Submit"));
+
+exmaple: (in HTML/DOM)
+----------------------
+    <button id:"btn"><span>Submit</span></button>
+
+NOTE: 
+    it returns the json-OBJECT.
+    it must be added to root-element.
+
+5: creating the root-container of html:
+    const rootContainer = document.getElementById("root");
+6: creating the root of react as:
+    const root = ReactDOM.createRoot(rootContainer);
+7: rendering the newly created-react-elments as:
+    root.render(Btn());
+
+
+
+
+in javascript react-element looks like:
+JSON-OBJECT (REACT-ELEMENT)
+{
+    type: 'button',
+    props: {
+        childres: 'submit',
+        className: 'btn btn-primary'
+    }
+}
