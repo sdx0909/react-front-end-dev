@@ -134,3 +134,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+/react-vite-demo/package.json
+/react-vite-demo/package-lock.json

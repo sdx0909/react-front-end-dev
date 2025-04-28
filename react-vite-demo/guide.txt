@@ -7,7 +7,7 @@ How to create a react-project:
 -------------------------------
 syntax:
 -------
-create-react-app  name-of-project
+npx create-react-app  name-of-project
 
 exmaple:
 --------
