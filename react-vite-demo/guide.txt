@@ -31,3 +31,11 @@ cd project-name
 npm install 
 
 npm run dev
+
+
+# Component Basic:
+------------------
+1: Functional Component:(Recommded)
+2: Class Component:
+
+
