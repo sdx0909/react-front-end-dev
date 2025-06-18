@@ -1,0 +1,29 @@
+Project Name: Pokedex : 
+---------------------
+
+we are integrating the api : https://pokeapi.co/
+
+1: downloading the list of pokemons at initial start.
+ url : https://pokeapi.co/api/v2/pokemon
+
+2: useEffect has 3 cases for rendering the callback:
+---------------------------
+    2.2 useEffect with empty array []:
+    ----------------------------------
+    -> if you specifies the empty array after callback function then the useEffect will executes the callback function at only once(intial-component-rendering)
+
+    2.2 useEffect with no array:
+    ---------------------------
+    -> if we do not use any array then it will always executes the callback fuction whenever we rendering the component.
+    (NOTE: rendering the component in the sense we are changing the variables of component) 
+
+    2.3 useEffect with array-elment:
+    -------------------------------
+    -> if we specifies the variable/s in the array then it will executes the callback function on the basis of variable/s changes. means if the variables changes then callback executes if and only if variables are specified in the array only.
+
+3: downloading data from api:
+-----------------------------
+    3.1: fetchAPI
+    3.2: axios(recommended)
+    -> installing the axios:
+        npm install axios
