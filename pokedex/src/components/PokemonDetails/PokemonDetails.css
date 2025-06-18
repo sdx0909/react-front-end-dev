@@ -5,8 +5,13 @@
     align-items: center;
     
 }
+
+.pokeon-details-image {
+    margin-top: 2rem;
+    width: 200px;
+}
 .pokemon-details-name {
-    font-size: larger;
+    font-size: large;
     color: black;
     margin-top: 1rem;
 }
