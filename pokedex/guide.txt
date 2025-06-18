@@ -27,3 +27,58 @@ we are integrating the api : https://pokeapi.co/
     3.2: axios(recommended)
     -> installing the axios:
         npm install axios
+
+
+4: React-Router-Dom:
+---------------------
+
+-> used to handeling the routes.
+-> installing the react-router-dom:
+    command : npm i react-router-dom
+
+-> inside the 'main.jsx' >
+-> import the 'BrowserRouter' from 'react-router-dom' module.
+-> wrap the <App /> into <BrowserRouter /> as like
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+
+-> this can enable React Router in whole <App>.
+
+
+5: configure the route:
+-----------------------
+-> creating the 'routes' folder.
+-> creating the <CustomRoutes> component in that handles the routes to appropriate component.
+-> for setting the routes with corresponding component we need Routes,Route from 'react-router-dom'.
+-> here,
+    'path'    : specifies the url-path 
+    'element' : specifies the component which we invoke after go to respective path. 
+
+
+-> for example:
+---------------
+<Routes>
+    <Route path="/" element={<Pokedex />}></Route>
+    <Route path="/pokemon/:id" element={<PokemonDetails />}></Route>
+</Routes>
+
+
+5: <Link to=""> component:
+--------------------------
+-> this component provided by 'react-router-dom'.
+-> alternative for <a></a> anchor tag, but difference is that <Link to=""> component not reload the page. 
+-> anchor tag has drawback of reloading the entire application when click on it.
+-> in 'Pokemon.jsx' file instead of using 
+    <a href={`/pokemon/${id}`}></a>
+-> we use :
+    <Link to={`/pokemon/${id}`}></Link>
+
+
+
+6: useParams() Hook:
+--------------------
+-> useParams() Hook used to fetch the params from current url path.provided by 'react-router-dom' module.
+-> it return an object of 'key:value' of the dynamic params from the current url that where matche by '<Route path={} element={}>' 
+-> here for example:
+    const { id } = useParams();

@@ -34,14 +34,14 @@ function PokemonList() {
       axios.get(pokemon.url)
     );
 
-    console.log("pokemonResultsPromise Array:");
-    console.log(pokemonResultPromise);
+    // console.log("pokemonResultsPromise Array:");
+    // console.log(pokemonResultPromise);
 
     // PASSING THAT PROMISES-ARRAY TO 'axios.all()'
     const pokemonData = await axios.all(pokemonResultPromise);
     // ARRAY OF 20 POKEMONS DETAILED DATA
-    console.log("pokemonData >");
-    console.log(pokemonData);
+    // console.log("pokemonData >");
+    // console.log(pokemonData);
 
     // NOW ITERATING THE ABOVE 20 POKEMONS (DETAILED)DATA
     // AND EXTRACT ID,NAME,IMAGE_URL,TYPE FROM IT.
@@ -55,8 +55,8 @@ function PokemonList() {
         types: pokemon.types,
       };
     });
-    console.log("res >");
-    console.log(res);
+    // console.log("res >");
+    // console.log(res);
 
     // save the data of 20 pokemons in array of "pokemonList"
     setPokemonList(res);
@@ -74,7 +74,7 @@ function PokemonList() {
         {isLoading
           ? "Loading..."
           : pokemonList.map((p) => (
-              <Pokemon name={p.name} image={p.image} key={p.id} />
+              <Pokemon name={p.name} image={p.image} key={p.id} id={p.id} />
             ))}
       </div>
       <div className="controls">
@@ -86,9 +86,7 @@ function PokemonList() {
         </button>
         <button
           disabled={nextUrl === null}
-          onClick={() => {
-            setPokedexUrl(nextUrl);
-          }}
+          onClick={() => setPokedexUrl(nextUrl)}
         >
           Next
         </button>

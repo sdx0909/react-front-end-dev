@@ -138,6 +138,10 @@ dist
 
 /react-vite-demo/package.json
 /react-vite-demo/package-lock.json
-/tic-tac-toe/package-lock.json
+
+
 /tic-tac-toe/package-lock.json
 /tic-tac-toe/package.json
+
+/pokedex/package-lock.json
+/pokedex/package.json
