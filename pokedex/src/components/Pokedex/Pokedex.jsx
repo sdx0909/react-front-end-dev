@@ -1,4 +1,5 @@
-import PokemonList from "../PokemonList/PokemonList.";
+import PokemonList from "../PokemonList/PokemonList";
+// import PokemonList0 from "../PokemonList/PokemonList0";
 import Search from "../Search/Search";
 // importing the css
 import "./Pokedex.css";
